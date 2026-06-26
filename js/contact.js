@@ -1,37 +1,23 @@
-(function () {
+const form = document.getElementById('contact-form');
 
-    emailjs.init("_9nZBL8CThx1iitDq");
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
 
-})();
+  const formData = new FormData(form);
+  formData.append('access_key', '7a680359-052c-4860-9e7d-894b0713eb67'); // ← pega tu clave aquí
 
+  const response = await fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    body: formData
+  });
 
-const form = document.getElementById("contact-form");
+  const data = await response.json();
 
-
-form.addEventListener("submit", function(e){
-
-    e.preventDefault();
-
-
-    emailjs.sendForm(
-        "service_4rz7m98",
-        "template_x280l06",
-        this
-    )
-    .then(() => {
-
-        alert("Mensaje enviado correctamente");
-
-        form.reset();
-
-    })
-    .catch((error) => {
-
-    console.log(error);
-
-    alert("Error enviando mensaje");
-
-});
-
-
+  if (data.success) {
+    alert('¡Mensaje enviado con éxito!');
+    form.reset();
+  } else {
+    alert('Hubo un error. Por favor intenta de nuevo.');
+    console.error(data);
+  }
 });

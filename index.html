@@ -93,13 +93,13 @@
 
       <div class="mx-auto max-w-6xl w-full">
 
-        <div class="flex items-center justify-between gap-20">
+        <div class="flex flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between lg:gap-20">
           <div class="text-left">
 
             <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
               Haniel <span class="text-indigo-400">Hernández</span>
             </h1>
-            <p class="mt-8 text-xl/8 w-150 font-medium text-pretty text-gray-400 sm:text-xl/8">
+            <p class="mt-8 text-xl/8 max-w-xl font-medium text-pretty text-gray-400 sm:text-xl/8">
               Desarrollo APIs, aplicaciones web y automatizaciones con .NET y Python. Me enfoco en escribir código limpio que resuelva problemas concretos.
             </p>
 
@@ -118,15 +118,14 @@
             </div>
           </div>
 
-          <div class="flex-shrink-0">
-  <div class="w-72 h-72 lg:w-96 lg:h-96 overflow-hidden rounded-full">
-    <img 
-      src="/public/yo/haniel.jpeg" 
-      alt="Foto de perfil"
-      class="w-full h-full object-cover"
-    >
-  </div>
-</div>
+          <div class="flex-shrink-0 flex justify-center">
+            <div class="w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 overflow-hidden rounded-full"><img 
+                src="/public/yo/haniel.jpeg" 
+                alt="Foto de perfil"
+                class="w-full h-full object-cover"
+              >
+            </div>
+          </div>
         </div>
 
 
@@ -611,7 +610,9 @@ Busco oportunidades donde pueda seguir creciendo, aportar desde el primer día y
           class="mt-2 w-full resize-none rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-white/30"></textarea>
         </div>
 
-
+        <input type="hidden" name="subject" value="Nuevo mensaje desde tu portafolio">
+        <!-- Honeypot anti-spam -->
+        <input type="checkbox" name="botcheck" style="display:none">
 
         <button
         type="submit"
@@ -665,7 +666,6 @@ Busco oportunidades donde pueda seguir creciendo, aportar desde el primer día y
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="js/contact.js"></script>
 </body>
 
