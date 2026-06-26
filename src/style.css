@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@keyframes revealLine {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 90%;
+    opacity: 1;
+  }
+}
+
+.nav-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 90%;
+  height: 1px;
+
+  background: white;
+
+  box-shadow:
+    0 0 8px rgba(255,255,255,.35),
+    0 0 20px rgba(255,255,255,.15);
+
+  animation: revealLine 1.2s ease-out forwards;
+}

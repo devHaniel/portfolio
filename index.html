@@ -1,0 +1,664 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
+</head>
+
+<body class="bg-gray-900">
+  <div class="bg-gray-900">
+    <header class="fixed top-0 inset-x-0 z-50 bg-gray-900/80 backdrop-blur mx-auto max-w-7xl">
+
+      <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+
+        <div class="flex lg:flex-1">
+          <a href="#home" class="text-xl font-semibold text-white">Haniel <span class="text-indigo-500 font-bold" > .Net </span>  </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#home" class="text-sm font-semibold text-white">Home</a>
+          <a href="#about" class="text-sm font-semibold text-white">About</a>
+          <a href="#stack" class="text-sm font-semibold text-white">Stack</a>
+          <a href="#projects" class="text-sm font-semibold text-white">Projects</a>
+          <a href="#contact" class="text-sm font-semibold text-white">Contact</a>
+        </div>
+      </nav>
+      <div class="relative h-8">
+        <div class="nav-line"></div>
+      </div>
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+              <div class="flex items-center justify-between">
+                <button type="button" command="close" commandfor="mobile-menu"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                  <span class="sr-only">Close menu</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                    aria-hidden="true" class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-white/10">
+                  <div class="space-y-2 py-6">
+                    <a href="#home"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Home</a>
+                    <a href="#about"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About</a>
+                    <a href="#stack"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Stack</a>
+                    <a href="#projects"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Projects</a>
+                    <a href="#contact"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact</a>
+                  
+                  </div>
+
+                </div>
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="relative isolate min-h-screen flex items-center px-6 pt-14 lg:px-8">
+
+      <div class="mx-auto max-w-6xl w-full">
+
+        <div class="flex items-center justify-between gap-20">
+          <div class="text-left">
+
+            <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+              Haniel <span class="text-indigo-400">Hernández</span>
+            </h1>
+            <p class="mt-8 text-xl/8 w-150 font-medium text-pretty text-gray-400 sm:text-xl/8">
+              Desarrollo APIs, aplicaciones web y automatizaciones con .NET y Python. Me enfoco en escribir código limpio que resuelva problemas concretos.
+            </p>
+
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="https://github.com/devHaniel/" class="flex items-center gap-3 rounded-xl bg-indigo-500 px-4 py-3">
+              <i class="devicon-github-plain text-2xl text-white"></i>
+                <span class="text-white font-bold">GitHub</span>
+
+              </a>
+
+              <a href="https://www.linkedin.com/in/josephhanielhernandez/" class="flex items-center gap-3 rounded-xl bg-indigo-500 px-4 py-3">
+              <i class="devicon-linkedin-plain text-2xl text-white"></i>
+                <span class="text-white font-bold">Linkedin</span>
+
+              </a>
+            </div>
+          </div>
+
+          <div class="flex-shrink-0">
+  <div class="w-72 h-72 lg:w-96 lg:h-96 overflow-hidden rounded-full">
+    <img 
+      src="/public/yo/haniel.jpeg" 
+      alt="Foto de perfil"
+      class="w-full h-full object-cover"
+    >
+  </div>
+</div>
+        </div>
+
+
+      </div>
+
+  </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="relative isolate min-h-screen flex items-center px-6 pt-14 lg:px-8">
+
+    <div class="mx-auto max-w-6xl w-full">
+
+      <div class="text-left">
+
+        <h3 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+          Cada línea de código es una pieza más del proyecto
+        </h3>
+
+        <p class="mt-8 max-w-4xl text-xl/8 font-medium text-gray-400">
+          Soy estudiante de Ingeniería en Informática y desarrollador backend con experiencia práctica en .NET, Python y SQL Server.
+He construido desde software de escritorio para negocios reales hasta APIs REST consumidas por aplicaciones frontend, aplicando arquitectura en capas, Entity Framework y buenas prácticas de código limpio.
+Busco oportunidades donde pueda seguir creciendo, aportar desde el primer día y trabajar en proyectos con impacto real.
+        </p>
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="relative isolate min-h-screen flex items-center px-6 py-20 lg:px-8">
+
+    <div class="mx-auto max-w-6xl w-full">
+
+      <div class="mb-14">
+        <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+          Las piezas con las que construyo
+        </h2>
+
+        <p class="mt-5 max-w-3xl text-xl text-gray-400">
+          Las tecnologías con las que trabajo día a día y las que sigo aprendiendo.
+        </p>
+      </div>
+
+
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
+        <!-- Backend -->
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:bg-white/10">
+
+          <h3 class="text-2xl font-semibold text-white mb-6">
+            Backend
+          </h3>
+
+          <div class="flex flex-wrap gap-4">
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-csharp-plain text-2xl text-white"></i>
+              <span class="text-gray-300">C#</span>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-dotnetcore-plain text-2xl text-white"></i>
+              <span class="text-gray-300">.NET</span>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-python-plain text-2xl text-white"></i>
+              <span class="text-gray-300">Python</span>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-java-plain text-2xl text-white"></i>
+              <span class="text-gray-300">Java</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Frontend -->
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:bg-white/10">
+
+          <h3 class="text-2xl font-semibold text-white mb-6">
+            Frontend
+          </h3>
+
+          <div class="flex flex-wrap gap-4">
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-html5-plain text-2xl text-white"></i>
+              <span class="text-gray-300">HTML</span>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-css3-plain text-2xl text-white"></i>
+              <span class="text-gray-300">CSS</span>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-javascript-plain text-2xl text-white"></i>
+              <span class="text-gray-300">JavaScript</span>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-tailwindcss-plain text-2xl text-white"></i>
+              <span class="text-gray-300">Tailwind</span>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-bootstrap-plain text-2xl text-white"></i>
+              <span class="text-gray-300">Boostrap</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Database -->
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:bg-white/10">
+
+          <h3 class="text-2xl font-semibold text-white mb-6">
+            Bases de datos
+          </h3>
+
+          <div class="flex flex-wrap gap-4">
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-microsoftsqlserver-plain text-2xl text-white"></i>
+              <span class="text-gray-300">SQL Server</span>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-mysql-original text-2xl text-white"></i>
+              <span class="text-gray-300">MySql</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Tools -->
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:bg-white/10">
+
+          <h3 class="text-2xl font-semibold text-white mb-6">
+            Herramientas
+          </h3>
+
+          <div class="flex flex-wrap gap-4">
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3">
+              <i class="devicon-git-plain text-2xl text-white"></i>
+              <span class="text-gray-300">Git</span>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="projects" class="relative isolate px-6 py-20 lg:px-8">
+
+    <div class="mx-auto max-w-6xl w-full">
+
+
+      <div class="mb-14">
+        <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+          Piezas que he construido
+        </h2>
+
+        <p class="mt-5 max-w-3xl text-xl text-gray-400">
+          Proyectos propios que resuelven problemas reales. Cada uno con código disponible en GitHub.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Proyecto -->
+        <article class="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm lg:grid-cols-2">
+          <!-- Imagen -->
+
+          <div class="flex items-center justify-center rounded-2xl bg-black/20 min-h-72">
+
+            <img src="public/img/proyects/gym.jpeg" class="rounded-xl object-cover">
+
+          </div>
+
+          <!-- Info -->
+          <div class="flex flex-col justify-center">
+
+            <h3 class="text-3xl font-semibold text-white">
+              GymGestion-Lite
+            </h3>
+
+            <p class="mt-4 text-lg leading-8 text-gray-400">
+              Software de gestión integral para gimnasios pequeños y medianos
+
+              Sistema de escritorio desarrollado en C# WinForms con arquitectura de 3 capas, diseñado específicamente para optimizar las operaciones diarias de un gimnasio con una única estación de trabajo.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                .NET
+              </span>
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                SQL Server
+              </span>
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                Dapper ORM
+              </span>
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                WindForms
+              </span>
+
+            </div>
+
+            <div class="mt-8 flex gap-4">
+
+              <a href="https://github.com/devHaniel/GymGestion-Lite" class="rounded-xl border border-white/10 px-5 py-3 text-white transition hover:bg-white/10">
+                Github
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <article class="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm lg:grid-cols-2">
+          <!-- Imagen -->
+
+          <div class="flex items-center justify-center rounded-2xl bg-black/20 min-h-72">
+
+            <img src="public/img/proyects/Agend.png" class="rounded-xl object-cover">
+
+          </div>
+
+          <!-- Info -->
+          <div class="flex flex-col justify-center">
+
+            <h3 class="text-3xl font-semibold text-white">
+              Agenda University
+            </h3>
+
+            <p class="mt-4 text-lg leading-8 text-gray-400">
+              Plataforma académica desarrollada para la gestión de asignaturas y periodos.
+              El proyecto cuenta con una API REST creada con .NET, encargada de manejar la lógica
+              del sistema y la comunicación con la base de datos, la cual es consumida por la
+              aplicación frontend para mostrar y gestionar la información.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                .NET
+              </span>
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                SQL Server
+              </span>
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                Entity Framework
+              </span>
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                Razor pages
+              </span>
+
+            </div>
+
+            <div class="mt-8 flex gap-4">
+
+              <a href="https://github.com/devHaniel/AgendUniversity" class="rounded-xl border border-white/10 px-5 py-3 text-white transition hover:bg-white/10">
+                Github
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <article class="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm lg:grid-cols-2">
+          <!-- Imagen -->
+
+          <div class="flex items-center justify-center rounded-2xl bg-black/20 min-h-72">
+
+            <img src="public/img/proyects/agentecli.png" class="rounded-xl object-cover">
+
+          </div>
+
+          <!-- Info -->
+          <div class="flex flex-col justify-center">
+
+            <h3 class="text-3xl font-semibold text-white">
+              AgenteCli
+            </h3>
+
+            <p class="mt-4 text-lg leading-8 text-gray-400">
+              CLI de chat con IA para terminal, construido en .NET 10. Soporta múltiples agentes (Gemini, Groq, OpenAI), historial de conversaciones persistente y memoria de usuario entre sesiones.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                .NET
+              </span>
+
+            </div>
+
+            <div class="mt-8 flex gap-4">
+
+              <a href="https://github.com/devHaniel/AgentCli-Net" class="rounded-xl border border-white/10 px-5 py-3 text-white transition hover:bg-white/10">
+                Github
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm lg:grid-cols-2">
+          <!-- Imagen -->
+
+          <div class="flex items-center justify-center rounded-2xl bg-black/20 min-h-72">
+
+            <img src="public/img/proyects/monitor.png" class="rounded-xl object-cover">
+
+          </div>
+
+          <!-- Info -->
+          <div class="flex flex-col justify-center">
+
+            <h3 class="text-3xl font-semibold text-white">
+              Monitor de procesos
+            </h3>
+
+            <p class="mt-4 text-lg leading-8 text-gray-400">
+              Script para monitorizar el tiempo en que se uso o estuvo abierto una o más aplicaciones. Genera un reporte mostrando estadisticas comparativas a periodos pasados.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                Python
+              </span>
+
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm text-gray-300">
+                HTML
+              </span>
+
+
+            </div>
+
+            <div class="mt-8 flex gap-4">
+
+              <a href="https://github.com/devHaniel/monitor-procesos" class="rounded-xl border border-white/10 px-5 py-3 text-white transition hover:bg-white/10">
+                Github
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="relative isolate min-h-screen flex items-center px-6 py-20 lg:px-8">
+
+  <div class="mx-auto max-w-6xl w-full">
+
+
+    <div class="grid gap-10 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm lg:grid-cols-2 lg:p-12">
+
+
+      <!-- Texto -->
+      <div class="flex flex-col justify-center">
+
+        <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+          Contactemos
+        </h2>
+
+
+        <p class="mt-6 text-xl leading-8 text-gray-400">
+          Si estás buscando un desarrollador backend con ganas de crecer y aportar desde el primer día, me encantaría conversar. Estoy abierto a prácticas profesionales, trabajo remoto o proyectos de colaboración.
+        </p>
+
+
+        <div class="mt-8">
+
+          <p class="text-gray-400">
+            También puedes encontrarme en:
+          </p>
+
+          <div class="mt-4 flex gap-5">
+
+            <a href="https://github.com/devHaniel/" class="text-gray-400 hover:text-white transition">
+              GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/josephhanielhernandez/" class="text-gray-400 hover:text-white transition">
+              Linkedin
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- Formulario -->
+      <form id="contact-form" class="space-y-5">
+
+
+        <div>
+          <label class="text-sm text-gray-400">
+            Nombre
+          </label>
+
+          <input
+          type="text"
+          name="name"
+          placeholder="Nombre o empresa"
+          class="mt-2 w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-white/30">
+        </div>
+
+
+
+        <div>
+          <label class="text-sm text-gray-400">
+            Correo empresarial
+          </label>
+
+          <input
+          type="email"
+          name="email"
+          placeholder="correo@ejemplo.com"
+          class="mt-2 w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-white/30">
+        </div>
+
+
+
+        <div>
+          <label class="text-sm text-gray-400">
+            Mensaje
+          </label>
+
+          <textarea
+          name="message"
+          placeholder="Cuéntame sobre la oportunidad..."
+          class="mt-2 w-full resize-none rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-white/30"></textarea>
+        </div>
+
+
+
+        <button
+        type="submit"
+        class="w-full rounded-xl bg-white py-3 font-medium text-black transition hover:bg-gray-200">
+          Enviar mensaje
+        </button>
+
+
+      </form>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+  </div>
+
+  
+
+<footer class="bg-[#111322] border border-slate-700 rounded-xl mx-8 mb-4">
+    <div class="max-w-7xl mx-auto px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <!-- Copyright -->
+        <p class="text-slate-400 text-sm">
+            © 2026 Haniel Hernández. All rights reserved.
+        </p>
+
+
+        <div class="flex items-center gap-6 text-slate-400">
+
+           
+            <!-- GitHub -->
+            <a href="https://github.com/devHaniel/" 
+               class="hover:text-white transition">
+                <i class="devicon-github-original text-2xl"></i>
+            </a>
+
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/josephhanielhernandez/" 
+               class="hover:text-blue-500 transition">
+                <i class="devicon-linkedin-plain text-2xl"></i>
+            </a>
+
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/contact.js"></script>
+</body>
+
+</html>
